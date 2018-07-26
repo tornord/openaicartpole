@@ -1,0 +1,30 @@
+{
+  "name": "OpenAICartPole",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@tensorflow/tfjs": "^0.12.3",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "babel": "babel .\\src\\ModelHelper.js .\\src\\CartPole.js --out-dir .\\commonjs --watch",
+    "train": "node .\\src\\train.js"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "json-loader": "^0.5.7",
+    "webpack-manifest-plugin": "^2.0.3",
+    "worker-loader": "^2.0.0"
+  }
+}
