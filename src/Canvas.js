@@ -68,7 +68,8 @@ export class Canvas extends Component {
         if (node.parentNode && node.parentNode.clientWidth) {
             width = node.parentNode.clientWidth - 40;
         }
-        return { width, height: width / (widthHeightRatio ? widthHeightRatio : 4 / 3) };
+        var height = Math.min(width / (widthHeightRatio ? widthHeightRatio : 4 / 3), 400);
+        return { width, height };
     }
   
     update(_this) {
