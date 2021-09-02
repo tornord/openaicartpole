@@ -20,6 +20,8 @@ export class Loader {
         return ab;
     }
 
+    // or 
+    // Uint8Array.from(atob(base64), c => c.charCodeAt(0))
     static base64ToArrayBuffer(base64) {
         var binary_string =  window.atob(base64);
         var len = binary_string.length;
